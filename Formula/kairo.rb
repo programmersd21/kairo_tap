@@ -5,21 +5,21 @@
 class Kairo < Formula
   desc "Minimal, powerful task management"
   homepage "https://github.com/programmersd21/kairo"
-  version "1.6.1"
+  version "1.6.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/programmersd21/kairo/releases/download/1.6.1/kairo_darwin_x86_64.tar.gz"
-      sha256 "c3e4fa47e9e688715963d1aae4ae2408af167b9729a4665547c467714778cd6a"
+      url "https://github.com/programmersd21/kairo/releases/download/1.6.2/kairo_darwin_x86_64.tar.gz"
+      sha256 "31eeb0b31809fa566f25f436ecf75057875bd960f0407c80e6db33e36132c8ad"
 
       define_method(:install) do
         bin.install "kairo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/programmersd21/kairo/releases/download/1.6.1/kairo_darwin_arm64.tar.gz"
-      sha256 "53c3e274cb2b696e31674619194869d89fcc36ddf85bf2e3da65003945c092f7"
+      url "https://github.com/programmersd21/kairo/releases/download/1.6.2/kairo_darwin_arm64.tar.gz"
+      sha256 "debcb0d91cea4b4b2833bb35c6d836b500987328164d9bb0a728d21831c045dc"
 
       define_method(:install) do
         bin.install "kairo"
@@ -29,15 +29,15 @@ class Kairo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/programmersd21/kairo/releases/download/1.6.1/kairo_linux_x86_64.tar.gz"
-      sha256 "ee93d0afd4b54c7b8797b854111812f18297c35c8ba07469e419b20611e681ae"
+      url "https://github.com/programmersd21/kairo/releases/download/1.6.2/kairo_linux_x86_64.tar.gz"
+      sha256 "a241de125391655616c445a013afce3716d2b703a8df75a0ffb46f4dfb3397b3"
       define_method(:install) do
         bin.install "kairo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/programmersd21/kairo/releases/download/1.6.1/kairo_linux_arm64.tar.gz"
-      sha256 "2e2a718a9cad111b8151aaaa4c353e712d941c0b68b6eb52c1bbf0584b60a59f"
+      url "https://github.com/programmersd21/kairo/releases/download/1.6.2/kairo_linux_arm64.tar.gz"
+      sha256 "7933c9bd985d845a4890ea013fdba8c3f8b17147cf03ac519bd20628a2d4a8e6"
       define_method(:install) do
         bin.install "kairo"
       end
