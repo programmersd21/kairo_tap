@@ -11,7 +11,7 @@ class Kairo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/programmersd21/kairo/releases/download/1.7.2/kairo_darwin_x86_64.tar.gz"
-      sha256 "2f907885fbefc7af69b86a27dc4241bb82b0b63b0dd12088f1da4d6eb7ed9a46"
+      sha256 "17562e8c27f04eddbf56c1551da9a40fa9ff4590c7221e969497dab696ad6362"
 
       define_method(:install) do
         bin.install "kairo"
@@ -19,7 +19,7 @@ class Kairo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/programmersd21/kairo/releases/download/1.7.2/kairo_darwin_arm64.tar.gz"
-      sha256 "357fa68a504b68fff434f54f7e4e7682877258dac318d978b77edabf87b6e63f"
+      sha256 "ac480e41b9770671f20cb4db99d6e9a1005e3e18d98e8699fd8067753e86a4d1"
 
       define_method(:install) do
         bin.install "kairo"
@@ -30,14 +30,14 @@ class Kairo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/programmersd21/kairo/releases/download/1.7.2/kairo_linux_x86_64.tar.gz"
-      sha256 "c2ed36785d1f63095f7d2694054230a0dd29f461e844137b20078bdddd574184"
+      sha256 "20a3585c790fec8a96623ef92194b30af5b67520212c9bbd73a554ec44d8f036"
       define_method(:install) do
         bin.install "kairo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/programmersd21/kairo/releases/download/1.7.2/kairo_linux_arm64.tar.gz"
-      sha256 "57c9cf8cd493712e8ea57bc86557d6723505e438f845f3dd504ab9dffad3b390"
+      sha256 "8e8be3638ebf32cdcdbe4753b3114fa233d2c0d08be7f0658f2786ac42bacb21"
       define_method(:install) do
         bin.install "kairo"
       end
